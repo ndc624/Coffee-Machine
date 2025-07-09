@@ -35,11 +35,11 @@ MONEY = 0
 PROFIT = 0
 
 
-# TODO Print a report of all the coffee machine resources
+# COFFEE MACHINE RESOURCES
 def report():
     print(f"Water: {resources["water"]}\nMilk: {resources["milk"]}\nCoffee: {resources["coffee"]}\nMoney: {PROFIT} ")
 
-# TODO Create a function that checks and subtracts coffee, milk, and water levels
+# SUBTRACT COFFEE, MILK, & WATER
 def check_levels(a,b,c,d):
     leftover_a = resources["water"] - MENU[d]["ingredients"][a]
     leftover_b = resources["milk"] - MENU[d]["ingredients"][b]
@@ -63,7 +63,7 @@ def check_levels(a,b,c,d):
         # print(f"{c}: {resources[c]}")
         return True
 
-# TODO Ask for money
+# ASK FOR MONEY
 
 def coins():
     total = 0
@@ -90,7 +90,7 @@ def coins():
     return round(MONEY, 2)
 
 
-# TODO Prompt reader asking them what they would like
+# PROMPT USER
 
 off = False
 while off == False:
